@@ -10,18 +10,22 @@ import Home from "./components/Home";
 import PageNotFound from "./components/PageNotFound";
 
 import PackageJson from '../package.json';
+import Nav from "./components/Nav";
 
 function App() {
     return (
+        //TODO fix this on production instance to match https://stevannn.github.io/portfolio/ instead /portfolio
         <Router basename={`/${PackageJson.name}`}>
-            <Switch>
-                <Route path="/" exact component={Home} />
-                <Route path="/home" exact component={Home} />
-                <Route path="/about" component={About} />
-                <Route path="/work" component={Work} />
-                <Route path="/contact" component={Contact} />
-                <Route component={PageNotFound} />
-            </Switch>
+            <Nav/>
+            <main>
+                <Switch>
+                    <Route path="/" exact component={Home} />
+                    <Route path="/about" component={About} />
+                    <Route path="/work" component={Work} />
+                    <Route path="/contact" component={Contact} />
+                    <Route component={PageNotFound} />
+                </Switch>
+            </main>
         </Router>
     );
 }
