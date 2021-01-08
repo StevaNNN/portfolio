@@ -15,7 +15,7 @@ import Nav from "./components/Nav";
 function App() {
     return (
         //TODO fix this on production instance to match https://stevannn.github.io/portfolio/ instead /portfolio
-        <Router basename={`/${PackageJson.name}`}>
+        <Router basename={`https://stevannn.github.io/portfolio/}`}>
             <Nav/>
             <main>
                 <Switch>
