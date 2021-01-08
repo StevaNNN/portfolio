@@ -1,0 +1,25 @@
+html,
+#root,
+body {
+    height: 100%;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: $body-bg;
+    color: $body-color;
+    font-family: $font-family;
+    font-size: $font-size;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.logo {
+    background-image: url('#{$imgs-path}logo.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 48px;
+    width: 250px;
+}

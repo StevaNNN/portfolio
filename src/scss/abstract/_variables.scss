@@ -1,0 +1,105 @@
+//--------------------------------------------------------------------------------------------------------------------//
+//                                      THEME GLOBAL VARIABLES                                                        //
+//--------------------------------------------------------------------------------------------------------------------//
+/// App Global prefix
+/// @group app-config
+$prefix: 'ss-' !default;
+/// App font path
+/// @group app-config
+$fonts-path:            '../../resources/fonts/' !default;
+/// App imgs path
+/// @group app-config
+$imgs-path:             '../../resources/imgs/' !default;
+/// App icon path
+/// @group app-config
+$icon-path:             '../../resources/icons/' !default;
+//--------------------------------------------------------------------------------------------------------------------//
+//sass-lint:disable space-before-colon
+/// App map of fonts
+/// @group tp-fonts
+$fonts-map: ((
+        'oswald-light': (
+                'display': 'fallback',
+                'name'   : 'oswald-light',
+                'style'  : 'normal',
+                'weight' : 'normal',
+                'formats': 'ttf'
+        ),
+        'oswald-regular': (
+                'display': 'fallback',
+                'name'   : 'oswald-regular',
+                'style'  : 'normal',
+                'weight' : 'normal',
+                'formats': 'ttf'
+        ),
+        'oswald-semibold': (
+                'display': 'fallback',
+                'name'   : 'oswald-semibold',
+                'style'  : 'normal',
+                'weight' : 'normal',
+                'formats': 'ttf'
+        ),
+        'oswald-bold': (
+                'display': 'fallback',
+                'name'   : 'oswald-bold',
+                'style'  : 'normal',
+                'weight' : 'normal',
+                'formats': 'ttf'
+        )
+));
+//--------------------------------------------------------------------------------------------------------------------//
+/// App font reference map
+/// @group tp-fonts
+$fonts-reference-map: (
+        'oswald-light':    ('oswald-light',    'Helvetica Neue', sans-serif),
+        'oswald-regular':  ('oswald-regular',  'Helvetica Neue', sans-serif),
+        'oswald-semibold': ('oswald-semibold', 'Helvetica Neue', sans-serif),
+        'oswald-bold':     ('oswald-bold',     'Helvetica Neue', sans-serif)
+) !default;
+//--------------------------------------------------------------------------------------------------------------------//
+/// App font family light
+/// @group tp-fonts
+$font-family-light:           	map-get($fonts-reference-map, 'oswald-light') !default;
+/// App font family
+/// @group tp-fonts
+$font-family:           		map-get($fonts-reference-map, 'oswald-regular') !default;
+/// App font family semibold
+/// @group tp-fonts
+$font-family-semibold:  		map-get($fonts-reference-map, 'oswald-semibold') !default;
+/// App font family bold
+/// @group tp-fonts
+$font-family-bold:      		map-get($fonts-reference-map, 'oswald-bold') !default;
+//--------------------------------------------------------------------------------------------------------------------//
+/// App font size xs
+/// @group tp-fonts
+$font-size-xs:          10px !default;
+/// App font size sm
+/// @group tp-fonts
+$font-size-sm:          12px !default;
+/// App font size
+/// @group tp-fonts
+$font-size:             14px !default;
+/// App font size m
+/// @group tp-fonts
+$font-size-m:           16px !default;
+/// App font size l
+/// @group tp-fonts
+$font-size-l:           18px !default;
+/// App font size xl
+/// @group tp-fonts
+$font-size-lg:          20px !default;
+//--------------------------------------------------------------------------------------------------------------------//
+/// App transition duration
+/// @group app-config
+$transition-duration: 250ms !default;
+/// App transition type
+/// @group app-config
+$transition-animation: ease-in-out !default;
+/// App transition
+/// @group app-config
+$transition: transition(color), transition(background-color), transition(border-color), transition(box-shadow) !default;
+//--------------------------------------------------------------------------------------------------------------------//
+$user-select-list: none, all, text !default;
+//--------------------------------------------------------------------------------------------------------------------//
+$body-bg: #eaeaea !default;
+$body-color: #4a4a4a !default;
