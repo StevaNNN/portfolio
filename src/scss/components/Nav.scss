@@ -1,10 +1,31 @@
 .nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: 20px;
 }
 
 .nav-list {
     list-style: none;
     display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+
+    a {
+        text-decoration: none;
+        font-family: $font-family-semibold;
+        font-size: 25px;
+        color: $body-color;
+        display: block;
+        padding: 10px;
+        transition: transition(background-color);
+
+        &:hover,
+        &:active {
+            background-color: white;
+        }
+    }
 }

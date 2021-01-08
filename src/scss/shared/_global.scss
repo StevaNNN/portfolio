@@ -20,6 +20,10 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 48px;
-    width: 250px;
+
+    a {
+        height: 48px;
+        width: 250px;
+        display: block;
+    }
 }
