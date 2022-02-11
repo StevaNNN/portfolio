@@ -49,6 +49,6 @@
     "copyfiles": "^2.4.1",
     "gh-pages": "^2.2.0",
     "normalize.css": "^8.0.1",
-    "node-sass": "^4.13.0"
+    "node-sass": "^7.0.0"
   }
 }
